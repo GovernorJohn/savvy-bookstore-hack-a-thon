@@ -46,7 +46,6 @@ var State = {
             ]
         },
 
-
         {
             'id': 4,
             'name': 'Danger! A Catalog of Risks',
@@ -58,7 +57,6 @@ var State = {
                 'Why did it have to include snakes? - Indiana Jones',
                 "I ain't afraid of no ghost. Cliffs, though... - Ray Parker Jr. "
             ]
-
         },
 
         {
@@ -71,7 +69,6 @@ var State = {
                 "With every page the situation gets crazier, zanier, more improbable, also funnier...Kirkwood's bizarre humor comes off, thanks to his ability to throw opposites together, with a stand up comic&#39;s timing. - Publishers Weekly",
                 'An extraordinary novel...an ingenious, intriguing, and also moving story about two losers who become friends. It is also a revealing book about burning your bridges behind you. - Sacramento Union',
                 'This novel is woven together with such artistic acumen that suspense never ebbs. The plot structure, characterization, dialog and style are virtually flawless. - Chicago Sun - Times'
-
             ]
         }
     ],
@@ -79,7 +76,7 @@ var State = {
     'albums': [
         {
             'id': 1,
-            'name': "Atrophy",
+            'name': 'Atrophy',
             'creator': '3Teeth',
             'pictureUrl': ('https://f4.bcbits.com/img/a2512560373_16.jpg'),
             'price': 3,
@@ -89,20 +86,20 @@ var State = {
         },
         {
             'id': 2,
-            'name': "Love Death Immortality",
+            'name': 'Love Death Immortality',
             'creator': 'The Glitch Mob',
             'pictureUrl': 'https://consequenceofsound.files.wordpress.com/2014/01/91vaxjhtjjl-_sl1500_.jpg',
             'price': 12.99,
             'sellingPoints': [
-                `[The Glitch Mob's] sophomore album returns with the pulsing, headbang-worthy songs that initially commanded their fans' attention. -- Consequence of Sound.net`,
-                `In the end, what really made this entire work stick out and worthy of such a high ranking is the creativity that went behind the entire process. Considering this is The Glitch Mob's only second album and they've released it through their own self run label, Glass Air Records, they've created quite a stir. -- Earmilk`,
-                `If you liked Drink the Sea, this is an evolution [from the band's initial sound]. There are clear references to their original sound, but The Glitch Mob has successfully branched into a new overall feel. -- Craig Apfelback, Amazon.com`
+                '[The Glitch Mob\'s] sophomore album returns with the pulsing, headbang-worthy songs that initially commanded their fans\' attention. -- Consequence of Sound.net',
+                'In the end, what really made this entire work stick out and worthy of such a high ranking is the creativity that went behind the entire process. Considering this is The Glitch Mob\'s only second album and they\'ve released it through their own self run label, Glass Air Records, they\'ve created quite a stir. -- Earmilk',
+                'If you liked Drink the Sea, this is an evolution [from the band\'s initial sound]. There are clear references to their original sound, but The Glitch Mob has successfully branched into a new overall feel. -- Craig Apfelback, Amazon.com'
             ]
         },
         
         {
             'id': 3,
-            'name': "The Best of Nickelback",
+            'name': 'The Best of Nickelback',
             'creator': 'Nickelback',
             'pictureUrl': 'https://target.scene7.com/is/image/Target/GUEST_14ad61c3-3789-437e-bd41-0fa0875c1ef5?wid=488&hei=488&fmt=webp',
             'price': 24.99,
@@ -116,38 +113,39 @@ var State = {
         
         {
             'id': 4,
-            'name': " Horizons/Rapture EP",
-            'creator': "The Physics House Band" ,
-            'pictureUrl': "https://f4.bcbits.com/img/a1321039771_10.jpg",
+            'name': ' Horizons/Rapture EP',
+            'creator': 'The Physics House Band' ,
+            'pictureUrl': 'https://f4.bcbits.com/img/a1321039771_10.jpg',
             'price': 30	,
             'sellingPoints': [
-                "1.ObeliskMonolith 05:12",
-                "2.Abraxical Solapse 04:19",
-                "3.Hollow Mountain 03:47",
-                "4.Teratology 06:25",
-                "5.The Spectral Beyond 01:32"
+                '1.ObeliskMonolith 05:12',
+                '2.Abraxical Solapse 04:19',
+                '3.Hollow Mountain 03:47',
+                '4.Teratology 06:25',
+                '5.The Spectral Beyond 01:32'
             ]
         },
+
         {
             'id': 5,
-            'name': "Best Ballads",
+            'name': 'Best Ballads',
             'creator': 'Whitesnake',
-            'pictureUrl': "https://lastfm-img2.akamaized.net/i/u/ar0/b9354feec4ae0b60287cc3202dc25571",
+            'pictureUrl': 'https://lastfm-img2.akamaized.net/i/u/ar0/b9354feec4ae0b60287cc3202dc25571',
             'price': 25,
             'sellingPoints': [
-                "Say You Love Me",
-                "Love Is Blind",
-                "Looking for Love",
-                "Your Precious Love"
+                'Say You Love Me',
+                'Love Is Blind',
+                'Looking for Love',
+                'Your Precious Love'
             ]
         }
     ]
 };
     
     
-    function render(state){
-        root.innerHTML = `
-        ${Navigation(state)}
+function render(state){
+    root.innerHTML = `
+      ${Navigation(state)}
       ${Header(state)}
       ${Content(state)}
       ${Footer(state)}
