@@ -5,6 +5,19 @@ html {
 }
 
 /*put all other styles below this line, please*/
+h3 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+}
+
+h4{
+  text-align: center;
+  font-size: 1.5em;
+}
+.book{
+  border-style: solid;
+}
 
 h2 {
   font-family:  'Aclonica', sans-serif;
@@ -16,22 +29,29 @@ h2 {
  }
 
 #root{
-  background-color: darkred;
+  background-color: rgba(190, 23, 126, 0.425);
+  text-align: center;
   display: grid;
   min-height: 100vh;
   grid-template-rows: min-content 30vh auto min-content;
   grid-template-areas:
-    "navigation"
-    "header"
-    "content"
-    "footer";
+  "navigation"
+  "header"
+  "content"
+  "footer";
 }
+img {
+  width: 700px;
+  height: 700px;
+  border-style: solid;
 
+}
 #header{
   grid-area: header;
   background-image: url("https://fuzzable.com/wp-content/uploads/2018/11/The-Most-Beautiful-Libraries-Around-The-World-04.jpg");
 
 }
+
 
 #content {
   background: linear-gradient(#E9190F, lightcoral);
@@ -67,6 +87,7 @@ li {
 
 p {
   font-family: 'Prata', serif;
+  text-align: center;
 }
 
 @media (min-width: 750px) {
